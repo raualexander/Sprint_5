@@ -5,7 +5,6 @@ from locators import Locators
 
 
 class Test:
-
     def test_switch_to_sauces(self, driver):
         """переходим к вкладке 'соусы' """
         driver.find_element(By.XPATH, Locators.sauces).click()

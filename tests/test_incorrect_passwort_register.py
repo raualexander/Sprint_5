@@ -6,6 +6,7 @@ from locators import Locators
 
 faker = Faker()
 
+
 class Test:
     def test_incorrect_password_input(self, driver):
         email = faker.email()
