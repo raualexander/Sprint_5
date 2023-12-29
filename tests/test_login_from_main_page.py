@@ -9,7 +9,6 @@ class Test:
     def test_signin_from_main_page(self, driver):
         email = 'burger_enjoyer@yandex.kz'
         password = '123456'
-
         """переходим к форме авторизации через кнопку на главной и авторизуемся"""
         driver.find_element(By.XPATH, Locators.signin_button_from_main_page).click()
         WebDriverWait(driver, 3).until(ec.visibility_of_element_located((By.XPATH, Locators.signin_form)))

@@ -10,11 +10,8 @@ faker = Faker()
 class Test:
     def test_incorrect_password_input(self, driver):
         email = faker.email()
-
         """используем пароль с количеством символов < 6"""
         password = '1234'
-        print(email)
-
         """заходим в личный кабинет без авторизации и попадаем на форму для входа"""
         driver.find_element(By.XPATH, Locators.account_page_open_link).click()
 

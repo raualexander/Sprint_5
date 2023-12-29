@@ -10,7 +10,6 @@ class Test:
     def test_open_constructor_from_account_page_button(self, driver, link_to_constructor):
         email = 'burger_enjoyer@yandex.kz'
         password = '123456'
-
         """переходим к форме авторизации через кнопку на главной и авторизуемся"""
         driver.find_element(By.XPATH, Locators.signin_button_from_main_page).click()
         WebDriverWait(driver, 3).until(ec.visibility_of_element_located((By.XPATH, Locators.signin_form)))

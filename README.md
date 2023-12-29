@@ -20,3 +20,5 @@
 ### Locators are stored here:
 
 - locators.py
+
+### To run this project, clone this repository, install all required dependencies and run python files from "tests" directory 

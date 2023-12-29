@@ -5,10 +5,9 @@ from locators import Locators
 
 
 class Test:
-    def test_logout_from_account_page(self, driver):
+    def test_logout_from_forgot_password_page(self, driver):
         email = 'burger_enjoyer@yandex.kz'
         password = '123456'
-
         """переходим к форме авторизации через кнопку на главной и авторизуемся"""
         driver.find_element(By.XPATH, Locators.signin_button_from_main_page).click()
         WebDriverWait(driver, 3).until(ec.visibility_of_element_located((By.XPATH, Locators.signin_form)))

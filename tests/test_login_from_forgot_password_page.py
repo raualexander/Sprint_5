@@ -9,7 +9,6 @@ class Test:
     def test_signin_from_main_page(self, driver):
         email = 'burger_enjoyer@yandex.kz'
         password = '123456'
-
         """переходим к форме авторизации с главной страницы"""
         driver.find_element(By.XPATH, Locators.signin_button_from_main_page).click()
 

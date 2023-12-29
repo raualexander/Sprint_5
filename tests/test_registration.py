@@ -11,8 +11,6 @@ class Test:
     def test_registration_check_account_page(self, driver):
         email = faker.email()
         password = '123456'
-        print(email)
-
         """заходим в личный кабинет без авторизации и попадаем на форму для входа"""
         driver.find_element(By.XPATH, Locators.account_page_open_link).click()
 
